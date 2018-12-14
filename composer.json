@@ -1,0 +1,22 @@
+{
+  "name": "deckerweb/wpdr-simple-downloads",
+  "description": "WordPress plugin that use the WP Document Revisions plugin as very basic & simple download manager with this additional add-on plugin.",
+  "keywords": ["downloads", "download", "files", "file manager", "document", "revisions", "add-on", "deckerweb"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/deckerweb/wpdr-simple-downloads",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "David Decker",
+      "homepage": "https://deckerweb.de/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/deckerweb/wpdr-simple-downloads/issues",
+    "source": "https://github.com/deckerweb/wpdr-simple-downloads"
+  },
+  "require": {
+    "php": ">=5.6"
+  }
+}
