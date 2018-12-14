@@ -11,6 +11,8 @@
 
 Adds support for exporting settings of various Genesis-specific plugins & Child Themes via the Genesis Exporter feature.
 
+[<img src="https://raw.githubusercontent.com/deckerweb/genesis-extra-settings-transporter/master/assets-repos/github-com/gest-banner.png" data-canonical-src="https://raw.githubusercontent.com/deckerweb/genesis-extra-settings-transporter/master/assets-repos/github-com/wpdrsd-banner.png" width="772" height="250" />](https://wordpress.org/plugins/genesis-extra-settings-transporter/)
+
 
 ## Description 
 

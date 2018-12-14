@@ -1,9 +1,9 @@
 {
-  "name": "deckerweb/wpdr-simple-downloads",
+  "name": "deckerweb/genesis-extra-settings-transporter",
   "description": "WordPress plugin that use the WP Document Revisions plugin as very basic & simple download manager with this additional add-on plugin.",
-  "keywords": ["downloads", "download", "files", "file manager", "document", "revisions", "add-on", "deckerweb"],
+  "keywords": ["genesis", "genesiswp", "genesis framework", "export", "settings", "plugins", "child themes", "add-on", "deckerweb"],
   "type": "wordpress-plugin",
-  "homepage": "https://github.com/deckerweb/wpdr-simple-downloads",
+  "homepage": "https://github.com/deckerweb/genesis-extra-settings-transporter",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -13,8 +13,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/deckerweb/wpdr-simple-downloads/issues",
-    "source": "https://github.com/deckerweb/wpdr-simple-downloads"
+    "issues": "https://github.com/deckerweb/genesis-extra-settings-transporter/issues",
+    "source": "https://github.com/deckerweb/genesis-extra-settings-transporter"
   },
   "require": {
     "php": ">=5.6"
