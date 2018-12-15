@@ -9,3 +9,9 @@ node_modules/
 
 # macOS
 .DS_Store
+
+# Plugin dev
+dev.txt
+dev.md
+Dev.txt
+Dev.md
