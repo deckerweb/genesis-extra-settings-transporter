@@ -16,8 +16,11 @@ Adds support for exporting settings of various Genesis-specific plugins & Child 
 
 ## Description 
 
-**Backup or Migrate Settings**
+**Migrate or Backup Settings**
 Finally, not only do backups or transfers of Genesis core settings but **also hook in official & third-party plugins** plus **some child themes**. Especially useful for site builders and developers to speed up their work!
+
+[![Video of Plugin's Live Demo and Walkthrough](https://img.youtube.com/vi/5c-lemjFxSs/0.jpg)](https://www.youtube.com/watch?v=5c-lemjFxSs)
+[**original video link**](https://www.youtube.com/watch?v=5c-lemjFxSs) *by plugin developer David Decker*
 
 A great helper tool for Genesis child themes plus Genesis-specific plugins with their own **extra settings**!
 
@@ -73,13 +76,14 @@ You can also contribute code-wise via our [Genesis Extra Settings Transporter Gi
 
 
 ### Documentation and Support 
-- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/genesis-extra-settings-transporter).
+* If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/genesis-extra-settings-transporter).
 
 
 ### Liked Builder Template Categories? 
-* Then please **rate us 5 stars** on [WordPress.org](https://wordpress.org/support/plugin/genesis-extra-settings-transporter/reviews/?filter=5/#new-post) :)
+* **Rate us 5 stars** on [WordPress.org](https://wordpress.org/support/plugin/genesis-extra-settings-transporter/reviews/?filter=5/#new-post) :)
 * Join our [**Facebook User Community Support Group**](https://www.facebook.com/groups/deckerweb.wordpress.plugins/)
 * Like our [**Facebook Info Page for Deckerweb Plugins**](https://www.facebook.com/deckerweb.wordpress.plugins/)
+* [**Subscribe to my Newsletter for insider info on this plugin**](https://eepurl.com/gbAUUn), plus tutorials and more stuff on deckerweb WordPress plugins - join a thriving community of site builders!
 
 
 ### This Plugin ... 
@@ -89,7 +93,7 @@ You can also contribute code-wise via our [Genesis Extra Settings Transporter Gi
 
 
 ### Recommended Time Saver 
-Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Builders and admins: Building sites with Elementor? [**Your work will get easier & faster with Toolbar Extras.**](https://wordpress.org/plugins/toolbar-extras/) With extended plugin & theme support baked right in. Of course, "Builder Template Categories" is integrated as well :)
+Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Builders and admins: Building sites with Elementor? [**Your work will get easier & faster with Toolbar Extras.**](https://wordpress.org/plugins/toolbar-extras/) With extended plugin & theme support baked right in. Of course, "Genesis Extra Settings Transporter" is integrated as well :)
 
 * [Plugin Page here on WordPress.org](https://wordpress.org/plugins/toolbar-extras/)
 * [Plugin's own website toolbarextras.com](https://toolbarextras.com/)
@@ -275,6 +279,9 @@ Exporting and importing settings for plugins like "Genesis Simple Hooks" or my o
 
 
 ## Changelog 
+
+
+([Join my Genesis plugins newsletter](https://eepurl.com/gbAUUn))
 
 
 ### 1.4.0 - 2018-12-14 

@@ -13,8 +13,10 @@ Adds support for exporting settings of various Genesis-specific plugins & Child 
 
 == Description ==
 
-**Backup or Migrate Settings**
+**Migrate or Backup Settings**
 Finally, not only do backups or transfers of Genesis core settings but **also hook in official & third-party plugins** plus **some child themes**. Especially useful for site builders and developers to speed up their work!
+
+https://www.youtube.com/watch?v=5c-lemjFxSs
 
 A great helper tool for Genesis child themes plus Genesis-specific plugins with their own **extra settings**!
 
@@ -65,12 +67,13 @@ If you want to translate, [go to the Translation Portal at translate.wordpress.o
 You can also contribute code-wise via our [Genesis Extra Settings Transporter GitHub Repository](https://github.com/deckerweb/genesis-extra-settings-transporter) - and see where you can help.
 
 = Documentation and Support =
-- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/genesis-extra-settings-transporter).
+* If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/genesis-extra-settings-transporter).
 
 = Liked Builder Template Categories? =
-* Then please **rate us 5 stars** on [WordPress.org](https://wordpress.org/support/plugin/genesis-extra-settings-transporter/reviews/?filter=5/#new-post) :)
+* **Rate us 5 stars** on [WordPress.org](https://wordpress.org/support/plugin/genesis-extra-settings-transporter/reviews/?filter=5/#new-post) :)
 * Join our [**Facebook User Community Support Group**](https://www.facebook.com/groups/deckerweb.wordpress.plugins/)
 * Like our [**Facebook Info Page for Deckerweb Plugins**](https://www.facebook.com/deckerweb.wordpress.plugins/)
+* [**Subscribe to my Newsletter for insider info on this plugin**](https://eepurl.com/gbAUUn), plus tutorials and more stuff on deckerweb WordPress plugins - join a thriving community of site builders!
 
 = This Plugin ... =
 * ... scratches my own itch!
@@ -78,7 +81,7 @@ You can also contribute code-wise via our [Genesis Extra Settings Transporter Gi
 * ... was created with love (plus some coffee) :-) - [if you like it consider donating](https://www.paypal.me/deckerweb)
 
 = Recommended Time Saver =
-Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Builders and admins: Building sites with Elementor? [**Your work will get easier & faster with Toolbar Extras.**](https://wordpress.org/plugins/toolbar-extras/) With extended plugin & theme support baked right in. Of course, "Builder Template Categories" is integrated as well :)
+Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Builders and admins: Building sites with Elementor? [**Your work will get easier & faster with Toolbar Extras.**](https://wordpress.org/plugins/toolbar-extras/) With extended plugin & theme support baked right in. Of course, "Genesis Extra Settings Transporter" is integrated as well :)
 
 * [Plugin Page here on WordPress.org](https://wordpress.org/plugins/toolbar-extras/)
 * [Plugin's own website toolbarextras.com](https://toolbarextras.com/)
@@ -96,6 +99,7 @@ Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Bu
 * [Genesis Widgetized Archive](https://wordpress.org/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
 * [Genesis Widgetized Footer](https://wordpress.org/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
 * [Genesis Connect for Easy Digital Downloads](https://wordpress.org/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
+* [*My Genesis plugins newsletter*](https://eepurl.com/gbAUUn)
 
 == My Other WordPress Plugins ==
 * [**Toolbar Extras for Genesis & Elementor - WordPress Admin Bar Enhanced**](https://wordpress.org/plugins/toolbar-extras/)
@@ -104,6 +108,7 @@ Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Bu
 * [**Simple Download Manager for WP Document Revisions**](https://wordpress.org/plugins/wpdr-simple-downloads/)
 * [Multisite Toolbar Additions](https://wordpress.org/plugins/multisite-toolbar-additions/)
 * [Cleaner Plugin Installer](https://wordpress.org/plugins/cleaner-plugin-installer/)
+* [*My plugins newsletter*](https://eepurl.com/gbAUUn)
 
 
 == Installation ==
@@ -241,6 +246,8 @@ Exporting and importing settings for plugins like "Genesis Simple Hooks" or my o
 
 
 == Changelog ==
+
+([Join my Genesis plugins newsletter](https://eepurl.com/gbAUUn))
 
 = 1.4.0 - 2018-12-14 =
 * ***New: Brought the plugin back to life after more than five years, yeah! :)***
