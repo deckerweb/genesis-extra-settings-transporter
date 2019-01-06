@@ -112,6 +112,7 @@ Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Bu
 * [Genesis Widgetized Archive](https://wordpress.org/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
 * [Genesis Widgetized Footer](https://wordpress.org/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
 * [Genesis Connect for Easy Digital Downloads](https://wordpress.org/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
+* [*My Genesis plugins newsletter*](https://eepurl.com/gbAUUn)
 
 
 ## My Other WordPress Plugins 
@@ -121,6 +122,7 @@ Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Bu
 * [**Simple Download Manager for WP Document Revisions**](https://wordpress.org/plugins/wpdr-simple-downloads/)
 * [Multisite Toolbar Additions](https://wordpress.org/plugins/multisite-toolbar-additions/)
 * [Cleaner Plugin Installer](https://wordpress.org/plugins/cleaner-plugin-installer/)
+* [*My plugins newsletter*](https://eepurl.com/gbAUUn)
 
 
 
