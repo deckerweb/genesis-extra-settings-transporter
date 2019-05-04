@@ -25,7 +25,7 @@ function ddw_gest_settings_page_link( $gest_links ) {
 
 	/** Settings (Export/ Import) Admin link */
 	$gest_settings_link = sprintf(
-		'<a class="dashicons-before dashicons-controls-repeat" href="%1$s" title="%2$s">%3$s</a>',
+		'<a href="%1$s" title="%2$s"><span class="dashicons-before dashicons-controls-repeat"></span> %3$s</a>',
 		esc_url( admin_url( 'admin.php?page=genesis-import-export' ) ),
 		esc_html__( 'Go to the Genesis Exporter page', 'genesis-extra-settings-transporter' ),
 		esc_attr__( 'Export/ Import', 'genesis-extra-settings-transporter' )
@@ -106,13 +106,114 @@ function ddw_gest_plugin_links( $gest_links, $gest_file ) {
 }  // end function
 
 
+add_filter( 'debug_information', 'ddw_gest_site_health_add_debug_info', 12 );
+/**
+ * Add additional plugin related info to the Site Health Debug Info section.
+ *   (Only relevant for WordPress 5.2 or higher)
+ *
+ * @link https://make.wordpress.org/core/2019/04/25/site-health-check-in-5-2/
+ *
+ * @since 1.4.1
+ *
+ * @param array $debug_info Array holding all Debug Info items.
+ * @return array Modified array of Debug Info.
+ */
+function ddw_gest_site_health_add_debug_info( $debug_info ) {
+
+	/** Add our Debug info */
+	$debug_info[ 'genesis-extra-settings-transporter' ] = array(
+		'label'  => esc_html__( 'Genesis Extra Settings Transporter', 'genesis-extra-settings-transporter' ) . ' (' . esc_html__( 'Plugin', 'genesis-extra-settings-transporter' ) . ')',
+		'fields' => array(
+			'gest_plugin_version' => array(
+				'label' => __( 'Plugin version', 'genesis-extra-settings-transporter' ),
+				'value' => GEST_PLUGIN_VERSION,
+			),
+			'PARENT_THEME_VERSION' => array(
+				'label' => 'Genesis: PARENT_THEME_VERSION',
+				'value' => ( ! defined( 'PARENT_THEME_VERSION' ) ? esc_html__( 'Undefined', 'genesis-extra-settings-transporter' ) : PARENT_THEME_VERSION ),
+			),
+		),
+	);
+
+	/** Return modified Debug Info array */
+	return $debug_info;
+
+}  // end function
+
+
+if ( ! function_exists( 'ddw_wp_site_health_remove_percentage' ) ) :
+
+	add_action( 'admin_head', 'ddw_wp_site_health_remove_percentage', 100 );
+	/**
+	 * Remove the "Percentage Progress" display in Site Health feature as this will
+	 *   get users obsessed with fullfilling a 100% where there are non-problems!
+	 *
+	 * @link https://make.wordpress.org/core/2019/04/25/site-health-check-in-5-2/
+	 *
+	 * @since 1.4.1
+	 */
+	function ddw_wp_site_health_remove_percentage() {
+
+		/** Bail early if not on WP 5.2+ */
+		if ( version_compare( $GLOBALS[ 'wp_version' ], '5.2-beta', '<' ) ) {
+			return;
+		}
+
+		?>
+			<style type="text/css">
+				.site-health-progress {
+					display: none;
+				}
+			</style>
+		<?php
+
+	}  // end function
+
+endif;
+
+
+if ( ! function_exists( 'ddw_genesis_tweak_plugins_submenu' ) ) :
+
+	add_action( 'admin_menu', 'ddw_genesis_tweak_plugins_submenu', 11 );
+	/**
+	 * Add Genesis submenu redirecting to "genesis" plugin search within the
+	 *   WordPress.org Plugin Directory. For Genesis 2.10.0 or higher this
+	 *   replaces the "Genesis Plugins" submenu which only lists plugins from
+	 *   StudioPress - but there are many more from the community.
+	 *
+	 * @since 1.4.1
+	 *
+	 * @uses remove_submenu_page()
+	 * @uses add_submenu_page()
+	 */
+	function ddw_genesis_tweak_plugins_submenu() {
+
+		/** Remove the StudioPress plugins submenu */
+		if ( class_exists( 'Genesis_Admin_Plugins' ) ) {
+			remove_submenu_page( 'genesis', 'genesis-plugins' );
+		}
+
+		/** Add a Genesis community plugins submenu */
+		add_submenu_page(
+			'genesis',
+			esc_html__( 'Genesis Plugins from the Plugin Directory', 'genesis-extra-settings-transporter' ),
+			esc_html__( 'Genesis Plugins', 'genesis-extra-settings-transporter' ),
+			'install_plugins',
+			esc_url( network_admin_url( 'plugin-install.php?s=genesis&tab=search&type=term' ) )
+		);
+
+	}  // end function
+
+endif;
+
+
 /**
  * Inline CSS fix for Plugins page update messages.
  *
  * @since 1.4.0
  *
- * @see   ddw_gest_plugin_update_message()
- * @see   ddw_gest_multisite_subsite_plugin_update_message()
+ * @see ddw_gest_plugin_update_message()
+ * @see ddw_gest_multisite_subsite_plugin_update_message()
  */
 function ddw_gest_plugin_update_message_style_tweak() {
 
@@ -134,10 +235,10 @@ add_action( 'in_plugin_update_message-' . GEST_PLUGIN_BASEDIR . 'genesis-extra-s
  *   Note: This action fires for regular single site installs, and for Multisite
  *         installs where the plugin is activated Network-wide.
  *
- * @since  1.4.0
+ * @since 1.4.0
  *
- * @param  object $data
- * @param  object $response
+ * @param object $data
+ * @param object $response
  * @return string Echoed string and markup for the plugin's upgrade/update
  *                notice.
  */
@@ -163,10 +264,10 @@ add_action( 'after_plugin_row_wp-' . GEST_PLUGIN_BASEDIR . 'genesis-extra-settin
  *   Note: This action fires for Multisite installs where the plugin is
  *         activated on a per site basis.
  *
- * @since  1.4.0
+ * @since 1.4.0
  *
- * @param  string $file
- * @param  object $plugin
+ * @param string $file
+ * @param object $plugin
  * @return string Echoed string and markup for the plugin's upgrade/update
  *                notice.
  */
@@ -204,9 +305,9 @@ add_filter( 'ddwlib_plir/filter/plugins', 'ddw_gest_register_plugin_recommendati
  *   Note: The top-level array keys are plugin slugs from the WordPress.org
  *         Plugin Directory.
  *
- * @since  1.4.0
+ * @since 1.4.0
  *
- * @param  array $plugins Array holding all plugin recommendations, coming from
+ * @param array $plugins Array holding all plugin recommendations, coming from
  *                        the class and the filter.
  * @return array Filtered and merged array of all plugin recommendations.
  */
@@ -307,9 +408,10 @@ if ( ! function_exists( 'ddwlib_plir_strings_plugin_installer' ) ) :
 	 *    - "Newest" --> tab in plugin installer toolbar
 	 *    - "Version:" --> label in plugin installer plugin card
 	 *
-	 * @since  1.4.0
+	 * @since 1.4.0
+	 * @since 1.4.1 Added new strings.
 	 *
-	 * @param  array $strings Holds all filterable strings of the library.
+	 * @param array $strings Holds all filterable strings of the library.
 	 * @return array Array of tweaked translateable strings.
 	 */
 	function ddwlib_plir_strings_plugin_installer( $strings ) {
@@ -326,6 +428,29 @@ if ( ! function_exists( 'ddwlib_plir_strings_plugin_installer' ) ) :
 			'genesis-extra-settings-transporter'
 		);
 
+		$strings[ 'ddwplugins_tab' ] = _x(
+			'deckerweb Plugins',
+			'Plugin installer: Tab name in installer toolbar',
+			'genesis-extra-settings-transporter'
+		);
+
+		$strings[ 'tab_title' ] = _x(
+			'deckerweb Plugins',
+			'Plugin installer: Page title',
+			'genesis-extra-settings-transporter'
+		);
+
+		$strings[ 'tab_slogan' ] = __( 'Great helper tools for Site Builders to save time and get more productive', 'genesis-extra-settings-transporter' );
+
+		$strings[ 'tab_info' ] = sprintf(
+			__( 'You can use any of our free plugins or premium plugins from %s', 'genesis-extra-settings-transporter' ),
+			'<a href="https://deckerweb-plugins.com/" target="_blank" rel="nofollow noopener noreferrer">' . $strings[ 'tab_title' ] . '</a>'
+		);
+
+		$strings[ 'tab_newsletter' ] = __( 'Join our Newsletter', 'genesis-extra-settings-transporter' );
+
+		$strings[ 'tab_fbgroup' ] = __( 'Facebook User Group', 'genesis-extra-settings-transporter' );
+
 		return $strings;
 
 	}  // end function
@@ -333,4 +458,4 @@ if ( ! function_exists( 'ddwlib_plir_strings_plugin_installer' ) ) :
 endif;  // function check
 
 /** Include class DDWlib Plugin Installer Recommendations */
-require_once( GEST_PLUGIN_DIR . 'includes/ddwlib-plugin-installer-recommendations.php' );
+require_once( GEST_PLUGIN_DIR . 'includes/ddwlib-plir/ddwlib-plugin-installer-recommendations.php' );

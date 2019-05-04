@@ -5,6 +5,7 @@
 * [Plugin page on WordPress.org: wordpress.org/plugins/genesis-extra-settings-transporter/](https://wordpress.org/plugins/genesis-extra-settings-transporter/)
 * [Translate the plugin](https://translate.wordpress.org/projects/wp-plugins/genesis-extra-settings-transporter)
 * [**Join plugin's newsletter for insider info, tutorials and more**](https://eepurl.com/gbAUUn)
+* [**Become a Patron**](https://www.patreon.com/deckerweb) and support ongoing development, maintenance and support of this plugin
 * [**Donate** for the further development & support of the plugin](https://www.paypal.me/deckerweb)
 * [Plugin's documentation & FAQ](https://wordpress.org/plugins/genesis-extra-settings-transporter/#faq)
 * [Facebook Community User Group](https://www.facebook.com/groups/deckerweb.wordpress.plugins/)
@@ -13,7 +14,15 @@
 
 ## Changelog of the Plugin
 
-### 1.4.0 - 2018-12-14 
+### ⚡ 1.4.1 - 2019-05-04 
+
+* *New: Successfully tested with WordPress 5.2*
+* New: Integrated with WordPress 5.2+ new Site Health feature: Genesis Extra Settings Transporter now has an extra section on the Debug Info tab - this is especially helpful for support requests
+* Tweak: Updated bundled library DDWlib Plugin Installer Recommendations to latest version (v1.4.0) - feature updates
+* Tweak: Updated `.pot` file plus all German translations (formal, informal) and language packs
+
+
+### 🎉 1.4.0 - 2018-12-14 
 
 * ***New: Brought the plugin back to life after more than five years, yeah! :)***
 * New: Added plugin support for "Genesis Connect for WooCommerce" (free by StudioPress)
@@ -35,7 +44,7 @@
 * *Trivia fact: this plugin is already over five (five!) years old. Whoa, that's a lot. ;-)*
 
 
-### 1.3.0 (2013-04-29) 
+### 🎉 1.3.0 (2013-04-29) 
 
 * **Unreleased - private beta version!**
 * NEW: Added plugin support for "WP Scribe Box" (free, by Jimmy Peña) - from the Genesis ecosystem :)
@@ -47,7 +56,7 @@
 * UPDATE: Updated German translations and also the `.pot` file for all translators!
 
 
-### 1.2.0 (2013-03-22) 
+### 🎉 1.2.0 (2013-03-22) 
 
 * NEW: Added plugin support for "WP Genesis Box" (free, by Jimmy Peña)
 * NEW: Added plugin support for "Dynamic Content Gallery (DCG)" (free, by Adew Walker/ studiograsshopper.ch) - from the Genesis ecosystem :)
@@ -59,7 +68,7 @@
 * UPDATE: Updated German translations and also the `.pot` file for all translators
 
 
-### 1.1.0 (2013-02-01) 
+### 🎉 1.1.0 (2013-02-01) 
 
 * NEW: Added plugin support for "Genesis Custom Backgrounds", "Genesis Custom Post Types Archives" and "Genesis Portfolio" (all free, by Travis Smith)
 * NEW: Added plugin support for "Premise" including its "Member Access" module -- Note: premium landing page plugin by Copyblogger Media LLC (same company as behind "Genesis" :)
@@ -70,7 +79,7 @@
 * UPDATE: Updated German translations and also the `.pot` file for all translators
 
 
-### 1.0.0 (2013-01-25) 
+### 🎉 1.0.0 (2013-01-25) 
 
 * *Initial release*
 * Includes support for 17 different plugins

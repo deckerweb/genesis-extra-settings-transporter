@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Genesis Extra Settings Transporter\n"
-"POT-Creation-Date: 2018-12-14 23:38+0100\n"
-"PO-Revision-Date: 2018-12-14 23:38+0100\n"
+"POT-Creation-Date: 2019-05-03 23:57+0200\n"
+"PO-Revision-Date: 2019-05-03 23:57+0200\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -37,13 +37,15 @@ msgstr ""
 #. Plugin Name of the plugin/theme
 #: genesis-extra-settings-transporter.php:157
 #: genesis-extra-settings-transporter.php:166
-#: includes/gest-admin-functions.php:49 includes/gest-admin-help.php:42
-#: includes/gest-admin-help.php:67 includes/gest-admin-help.php:81
+#: includes/gest-admin-extras.php:125 includes/gest-admin-functions.php:49
+#: includes/gest-admin-help.php:42 includes/gest-admin-help.php:67
+#: includes/gest-admin-help.php:81
 msgid "Genesis Extra Settings Transporter"
 msgstr "Genesis Extra-Einstellungen Transporter"
 
 # @ genesis-extra-settings-transporter
-#: genesis-extra-settings-transporter.php:166 includes/gest-admin-help.php:67
+#: genesis-extra-settings-transporter.php:166
+#: includes/gest-admin-extras.php:125 includes/gest-admin-help.php:67
 #: includes/gest-admin-help.php:199 includes/gest-options-plugins.php:30
 msgid "Plugin"
 msgstr "Plugin"
@@ -92,15 +94,65 @@ msgctxt "Plugins page listing"
 msgid "Donate"
 msgstr "Spenden"
 
-#: includes/gest-admin-extras.php:318
+# @ genesis-extra-settings-transporter
+#: includes/gest-admin-extras.php:128
+msgid "Plugin version"
+msgstr "Plugin-Version"
+
+#: includes/gest-admin-extras.php:133
+msgid "Undefined"
+msgstr "Nicht definiert"
+
+#: includes/gest-admin-extras.php:199
+msgid "Genesis Plugins from the Plugin Directory"
+msgstr "Genesis Plugins aus dem Pluginverzeichnis"
+
+# @ genesis-extra-settings-transporter
+#: includes/gest-admin-extras.php:200
+msgid "Genesis Plugins"
+msgstr "Genesis Plugins"
+
+#: includes/gest-admin-extras.php:420
 msgctxt "Plugin installer: Tab name in installer toolbar"
 msgid "Newest"
 msgstr "Neueste"
 
-#: includes/gest-admin-extras.php:324
+#: includes/gest-admin-extras.php:426
 msgctxt "Plugin card: plugin version"
 msgid "Version:"
 msgstr "Version:"
+
+#: includes/gest-admin-extras.php:432
+msgctxt "Plugin installer: Tab name in installer toolbar"
+msgid "deckerweb Plugins"
+msgstr "deckerweb Plugins"
+
+#: includes/gest-admin-extras.php:438
+msgctxt "Plugin installer: Page title"
+msgid "deckerweb Plugins"
+msgstr "deckerweb Plugins"
+
+#: includes/gest-admin-extras.php:443
+msgid ""
+"Great helper tools for Site Builders to save time and get more productive"
+msgstr ""
+"Großartige Helferlein-Plugins für Site-Builder, um wertvolle Zeit zu sparen "
+"und noch produktiver zu werden."
+
+#: includes/gest-admin-extras.php:446
+#, php-format
+msgid "You can use any of our free plugins or premium plugins from %s"
+msgstr ""
+"Du kannst jedes unserer kostenlosen Plugins oder Premium-Plugins von %s "
+"verwenden."
+
+#: includes/gest-admin-extras.php:450
+msgid "Join our Newsletter"
+msgstr "Newsletter jetzt!"
+
+#: includes/gest-admin-extras.php:452
+msgid "Facebook User Group"
+msgstr "Facebook-Nutzergruppe"
 
 # @ genesis-extra-settings-transporter
 #. translators: %s - name of plugin, "Genesis Extra Settings Transporter"

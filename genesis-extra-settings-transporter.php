@@ -12,7 +12,7 @@
  * Plugin Name:       Genesis Extra Settings Transporter
  * Plugin URI:        https://github.com/deckerweb/genesis-extra-settings-transporter
  * Description:       Adds support for exporting settings of various Genesis Framework specific plugins & Child Themes via the Genesis Exporter feature.
- * Version:           1.4.0
+ * Version:           1.4.1
  * Author:            David Decker - DECKERWEB
  * Author URI:        https://deckerweb.de/
  * License:           GPL-2.0-or-later
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 /** Set plugin version */
-define( 'GEST_PLUGIN_VERSION', '1.4.0' );
+define( 'GEST_PLUGIN_VERSION', '1.4.1' );
 
 /** Plugin directory */
 define( 'GEST_PLUGIN_DIR', trailingslashit( dirname( __FILE__ ) ) );

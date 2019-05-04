@@ -3,9 +3,9 @@ Contributors: daveshine, deckerweb, wpautobahn
 Donate link: https://www.paypal.me/deckerweb
 Tags: genesis, genesiswp, genesis framework, settings, exporter, plugins, child themes, export, import, transport, transporter, data, deckerweb
 Requires at least: 4.7
-Tested up to: 5.0
+Tested up to: 5.2
 Requires PHP: 5.6
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPL-2.0-or-later
 License URI: https://opensource.org/licenses/GPL-2.0
 
@@ -87,7 +87,7 @@ Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Bu
 * [Plugin's own website toolbarextras.com](https://toolbarextras.com/)
 * In your WordPress admin dashboard search for `toolbar extras` in the plugin installer ;-)
 
-= Check out my other Genesis Plugins =
+== Check out my other Genesis Plugins ==
 * [**Genesis Widgetized Not Found & 404**](https://wordpress.org/plugins/genesis-widgetized-notfound/) - Easy Setup for 404 Page and Search Not Found - be prepared for the edge cases
 * [**Genesis What's New Info**](https://wordpress.org/plugins/genesis-whats-new-info/) - Show the what's new overview page via left-hand admin menu
 * [**Genesis Layout Extras**](https://wordpress.org/plugins/genesis-layout-extras/) - Setup Default Layouts in Genesis for WordPress
@@ -103,6 +103,7 @@ Try [**Toolbar Extras**](https://toolbarextras.com/) my other plugin for Site Bu
 
 == My Other WordPress Plugins ==
 * [**Toolbar Extras for Genesis & Elementor - WordPress Admin Bar Enhanced**](https://wordpress.org/plugins/toolbar-extras/)
+* [**Toolbar Extras for Oxygen Builder - Add-On plugin**](https://wordpress.org/plugins/toolbar-extras-oxygen/)
 * [**Builder Template Categories - for WordPress Page Builders**](https://wordpress.org/plugins/builder-template-categories/)
 * [**Polylang Connect for Elementor – Language Switcher & Template Tweaks**](https://wordpress.org/plugins/connect-polylang-elementor/)
 * [**Simple Download Manager for WP Document Revisions**](https://wordpress.org/plugins/wpdr-simple-downloads/)
@@ -249,7 +250,14 @@ Exporting and importing settings for plugins like "Genesis Simple Hooks" or my o
 
 ([Join my Genesis plugins newsletter](https://eepurl.com/gbAUUn))
 
-= 1.4.0 - 2018-12-14 =
+= ⚡ 1.4.1 - 2019-05-04 =
+* *New: Successfully tested with WordPress 5.2*
+* New: Integrated with WordPress 5.2+ new Site Health feature: Genesis Extra Settings Transporter now has an extra section on the Debug Info tab - this is especially helpful for support requests
+* Tweak: Updated bundled library DDWlib Plugin Installer Recommendations to latest version (v1.4.0) - feature updates
+* Tweak: Updated `.pot` file plus all German translations (formal, informal) and language packs
+
+
+= 🎉 1.4.0 - 2018-12-14 =
 * ***New: Brought the plugin back to life after more than five years, yeah! :)***
 * New: Added plugin support for "Genesis Connect for WooCommerce" (free by StudioPress)
 * New: Added plugin support for "Genesis Accessible" (free, by Rian Rietveld, Robin Cornett)
@@ -270,7 +278,7 @@ Exporting and importing settings for plugins like "Genesis Simple Hooks" or my o
 * *Trivia fact: this plugin is already over five (five!) years old. Whoa, that's a lot. ;-)*
 
 
-= 1.3.0 (2013-04-29) =
+= 🎉 1.3.0 (2013-04-29) =
 * **Unreleased - private beta version!**
 * NEW: Added plugin support for "WP Scribe Box" (free, by Jimmy Peña) - from the Genesis ecosystem :)
 * NEW: Added plugin support for "WP Premise Box" (free, by Jimmy Peña) - from the Genesis ecosystem :)
@@ -281,7 +289,7 @@ Exporting and importing settings for plugins like "Genesis Simple Hooks" or my o
 * UPDATE: Updated German translations and also the `.pot` file for all translators!
 
 
-= 1.2.0 (2013-03-22) =
+= 🎉 1.2.0 (2013-03-22) =
 * NEW: Added plugin support for "WP Genesis Box" (free, by Jimmy Peña)
 * NEW: Added plugin support for "Dynamic Content Gallery (DCG)" (free, by Adew Walker/ studiograsshopper.ch) - from the Genesis ecosystem :)
 * NEW: Added plugin support for "WP-Cycle" (free, by Nathan Rice) - from the Genesis ecosystem :)
@@ -292,7 +300,7 @@ Exporting and importing settings for plugins like "Genesis Simple Hooks" or my o
 * UPDATE: Updated German translations and also the `.pot` file for all translators
 
 
-= 1.1.0 (2013-02-01) =
+= 🎉 1.1.0 (2013-02-01) =
 * NEW: Added plugin support for "Genesis Custom Backgrounds", "Genesis Custom Post Types Archives" and "Genesis Portfolio" (all free, by Travis Smith)
 * NEW: Added plugin support for "Premise" including its "Member Access" module -- Note: premium landing page plugin by Copyblogger Media LLC (same company as behind "Genesis" :)
 * NEW: Added child theme support for "Megalithe" v1.2+ (Premium, by ZigZagPress brand)
@@ -302,13 +310,16 @@ Exporting and importing settings for plugins like "Genesis Simple Hooks" or my o
 * UPDATE: Updated German translations and also the `.pot` file for all translators
 
 
-= 1.0.0 (2013-01-25) =
+= 🎉 1.0.0 (2013-01-25) =
 * *Initial release*
 * Includes support for 17 different plugins
 * Includes support for 53 different child themes
 
 
 == Upgrade Notice ==
+
+= 1.4.1 =
+Now with WordPress 5.2 Site Health integration. Plus few internal improvements. - **Update highly recommended!**
 
 = 1.4.0 =
 **Major release: Back in life :-)** - New supported plugins. All code improved. - Have fun migrating some settings ;-) -- **Update highly recommended!**
